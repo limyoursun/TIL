@@ -1,1 +1,1 @@
-# TIL
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=VT323&size=38&letterSpacing=0.01px&duration=2000&pause=1000&color=FF8500&background=282A3600&vCenter=true&width=435&lines=Today+I+Learn+_%E3%80%86(%EF%BD%A5_%EF%BD%A5%EF%BD%A1))](https://git.io/typing-svg)
