@@ -1,0 +1,6 @@
+@charset "UTF-8";
+.btn_calc{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+}
+.output{min-height:22px;padding-left:5px;background-color:rgb(94, 101, 98);line-height:22px;color:#fff;}

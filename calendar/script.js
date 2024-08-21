@@ -1,59 +1,3 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    @font-face {font-family:'Paperlogy-8ExtraBold';src:url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');font-weight:800;font-style:normal;}
-    *{font-family:"Paperlogy-8ExtraBold";margin:0;padding:0;}
-    caption{position:absolute;left:-9999px;}
-    .wrap{max-width:600px;margin:40px auto;padding:10px;border-top:15px solid #97a38a;background-color:#fffffb;box-shadow:0px 0px 10px 10px #e0e0e0;}
-    header{display:flex;justify-content:space-between;align-items:center;margin:20px 0;}
-    .month_info{margin-bottom:10px;font-size:70px;line-height:50px;text-align:center;}
-    .month_info + div{font-size:25px; text-align:center;}
-    table{width:100%;border-collapse:collapse;}
-    thead{border-collapse:separate;}
-    .month_info,
-    tr>*:nth-child(1){color:#ff2600;}
-    tr>*:nth-child(7){color:#00b3ff;}
-    th{font-family:"ZCOOL KuaiLe", sans-serif;}
-    th,
-    td{border:1px solid #000;font-size:40px;font-weight:bold;text-align:center;}
-    td.date{cursor:pointer;}
-    td div{padding:5px 0;}
-    td p{width:100%;height:20px;border-top:1px solid #000;}
-    .today > div{position:relative;}
-    .today > div:after{position:absolute;top:5%;left:5%;display:block;content:'';width:80%;height:80%; border-radius:50%; border:4px dashed #c3b0ec;}
-    dialog{position:fixed;top:50%;left:50%;width:200px;padding:20px;border:1px solid #000; text-align:center;transform:translate(-50%, -50%);}
-    dialog button{margin-top:20px;}
-  </style>
-  <title>Classic Calendar</title>
-</head>
-<body>
-  <div id="calendar" class="wrap">
-    <header>
-      <button id="calPrev">이전 달</button>
-      <h2 id="calInfo"></h2>
-      <button id="calNext">다음 달</button>
-    </header>
-    <table>
-      <caption>선택된 월</caption>
-      <thead>
-        <tr>
-          <th>日</th>
-          <th>月</th>
-          <th>火</th>
-          <th>水</th>
-          <th>木</th>
-          <th>金</th>
-          <th>土</th>
-        </tr>
-      </thead>
-      <tbody id="calendarBody"></tbody>
-    </table>
-  </div>
-
-  <script>
     // basic info
     const calendar = document.getElementById("calendar");
     const calendarBody = document.getElementById("calendarBody");
@@ -149,7 +93,3 @@
       }
       getCalendar(curYear, curMonth);
     })
-  </script>
-</body>
-
-</html>
